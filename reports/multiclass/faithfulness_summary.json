@@ -1,0 +1,8 @@
+{
+  "status": "Completed on validation data only",
+  "top_feature_count": 10,
+  "mean_top_feature_accuracy_drop": 0.03072289156626501,
+  "mean_random_feature_accuracy_drop": 0.0014457831325300785,
+  "top_minus_random_drop": 0.02927710843373493,
+  "interpretation": "A perturbation sensitivity check of model reliance; it is not a causal explanation and does not prove that SHAP is faithful."
+}

@@ -1,0 +1,12 @@
+# Python environments and transient files
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+.env
+.streamlit/secrets.toml
+
+# Keep the following runtime assets tracked in GitHub:
+# models/**, data/raw/data.csv, data/processed/**, reports/**, figures/**

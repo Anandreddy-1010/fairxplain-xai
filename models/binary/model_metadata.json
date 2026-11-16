@@ -1,0 +1,623 @@
+{
+  "task": "binary",
+  "classes": [
+    "Dropout",
+    "Not dropout"
+  ],
+  "selected_model": "Random Forest",
+  "raw_feature_columns": [
+    "Marital status",
+    "Application mode",
+    "Application order",
+    "Course",
+    "Daytime/evening attendance",
+    "Previous qualification",
+    "Previous qualification (grade)",
+    "Nacionality",
+    "Mother's qualification",
+    "Father's qualification",
+    "Mother's occupation",
+    "Father's occupation",
+    "Admission grade",
+    "Displaced",
+    "Educational special needs",
+    "Debtor",
+    "Tuition fees up to date",
+    "Gender",
+    "Scholarship holder",
+    "Age at enrollment",
+    "International",
+    "Curricular units 1st sem (credited)",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (evaluations)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)",
+    "Curricular units 1st sem (without evaluations)",
+    "Curricular units 2nd sem (credited)",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 2nd sem (approved)",
+    "Curricular units 2nd sem (grade)",
+    "Curricular units 2nd sem (without evaluations)",
+    "Unemployment rate",
+    "Inflation rate",
+    "GDP"
+  ],
+  "engineered_feature_columns": [
+    "Marital status",
+    "Application mode",
+    "Application order",
+    "Course",
+    "Daytime/evening attendance",
+    "Previous qualification",
+    "Previous qualification (grade)",
+    "Nacionality",
+    "Mother's qualification",
+    "Father's qualification",
+    "Mother's occupation",
+    "Father's occupation",
+    "Admission grade",
+    "Displaced",
+    "Educational special needs",
+    "Debtor",
+    "Tuition fees up to date",
+    "Gender",
+    "Scholarship holder",
+    "Age at enrollment",
+    "International",
+    "Curricular units 1st sem (credited)",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (evaluations)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)",
+    "Curricular units 1st sem (without evaluations)",
+    "Curricular units 2nd sem (credited)",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 2nd sem (approved)",
+    "Curricular units 2nd sem (grade)",
+    "Curricular units 2nd sem (without evaluations)",
+    "Unemployment rate",
+    "Inflation rate",
+    "GDP",
+    "Derived 1st sem approval rate",
+    "Derived 1st sem evaluation rate",
+    "Derived 1st sem no-evaluation rate",
+    "Derived 2nd sem approval rate",
+    "Derived 2nd sem evaluation rate",
+    "Derived 2nd sem no-evaluation rate",
+    "Derived semester grade change",
+    "Derived approved-units change",
+    "Derived mean semester grade"
+  ],
+  "categorical_columns": [
+    "Marital status",
+    "Application mode",
+    "Course",
+    "Daytime/evening attendance",
+    "Previous qualification",
+    "Nacionality",
+    "Mother's qualification",
+    "Father's qualification",
+    "Mother's occupation",
+    "Father's occupation",
+    "Displaced",
+    "Educational special needs",
+    "Debtor",
+    "Tuition fees up to date",
+    "Gender",
+    "Scholarship holder",
+    "International"
+  ],
+  "numeric_columns": [
+    "Application order",
+    "Previous qualification (grade)",
+    "Admission grade",
+    "Age at enrollment",
+    "Curricular units 1st sem (credited)",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (evaluations)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)",
+    "Curricular units 1st sem (without evaluations)",
+    "Curricular units 2nd sem (credited)",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 2nd sem (approved)",
+    "Curricular units 2nd sem (grade)",
+    "Curricular units 2nd sem (without evaluations)",
+    "Unemployment rate",
+    "Inflation rate",
+    "GDP",
+    "Derived 1st sem approval rate",
+    "Derived 1st sem evaluation rate",
+    "Derived 1st sem no-evaluation rate",
+    "Derived 2nd sem approval rate",
+    "Derived 2nd sem evaluation rate",
+    "Derived 2nd sem no-evaluation rate",
+    "Derived semester grade change",
+    "Derived approved-units change",
+    "Derived mean semester grade"
+  ],
+  "input_schema": {
+    "Marital status": {
+      "kind": "categorical",
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "default": 1
+    },
+    "Application mode": {
+      "kind": "categorical",
+      "values": [
+        1,
+        10,
+        15,
+        16,
+        17,
+        18,
+        2,
+        26,
+        27,
+        39,
+        42,
+        43,
+        44,
+        5,
+        51,
+        53,
+        57,
+        7
+      ],
+      "default": 1
+    },
+    "Application order": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 9.0,
+      "median": 1.0,
+      "mean": 1.7278481012658229
+    },
+    "Course": {
+      "kind": "categorical",
+      "values": [
+        171,
+        33,
+        8014,
+        9003,
+        9070,
+        9085,
+        9119,
+        9130,
+        9147,
+        9238,
+        9254,
+        9500,
+        9556,
+        9670,
+        9773,
+        9853,
+        9991
+      ],
+      "default": 9500
+    },
+    "Daytime/evening attendance": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1
+      ],
+      "default": 1
+    },
+    "Previous qualification": {
+      "kind": "categorical",
+      "values": [
+        1,
+        10,
+        12,
+        14,
+        15,
+        19,
+        2,
+        3,
+        38,
+        39,
+        4,
+        40,
+        42,
+        43,
+        5,
+        6,
+        9
+      ],
+      "default": 1
+    },
+    "Previous qualification (grade)": {
+      "kind": "numeric",
+      "min": 95.0,
+      "max": 190.0,
+      "median": 133.1,
+      "mean": 132.6133137432188
+    },
+    "Nacionality": {
+      "kind": "categorical",
+      "values": [
+        1,
+        100,
+        101,
+        103,
+        105,
+        108,
+        109,
+        11,
+        13,
+        14,
+        17,
+        2,
+        21,
+        22,
+        24,
+        25,
+        26,
+        32,
+        41,
+        6,
+        62
+      ],
+      "default": 1
+    },
+    "Mother's qualification": {
+      "kind": "categorical",
+      "values": [
+        1,
+        10,
+        11,
+        12,
+        14,
+        18,
+        19,
+        2,
+        22,
+        26,
+        27,
+        29,
+        3,
+        30,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        4,
+        40,
+        41,
+        42,
+        43,
+        44,
+        5,
+        6,
+        9
+      ],
+      "default": 1
+    },
+    "Father's qualification": {
+      "kind": "categorical",
+      "values": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        18,
+        19,
+        2,
+        20,
+        22,
+        25,
+        26,
+        27,
+        29,
+        3,
+        30,
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        4,
+        40,
+        41,
+        42,
+        43,
+        44,
+        5,
+        6,
+        9
+      ],
+      "default": 37
+    },
+    "Mother's occupation": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1,
+        10,
+        122,
+        123,
+        125,
+        131,
+        132,
+        134,
+        141,
+        143,
+        144,
+        151,
+        152,
+        153,
+        171,
+        173,
+        175,
+        191,
+        192,
+        193,
+        194,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        90,
+        99
+      ],
+      "default": 9
+    },
+    "Father's occupation": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1,
+        10,
+        101,
+        102,
+        103,
+        112,
+        114,
+        121,
+        122,
+        123,
+        124,
+        131,
+        132,
+        134,
+        135,
+        141,
+        143,
+        144,
+        151,
+        152,
+        153,
+        154,
+        161,
+        163,
+        171,
+        172,
+        174,
+        175,
+        181,
+        182,
+        183,
+        192,
+        193,
+        194,
+        195,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        90,
+        99
+      ],
+      "default": 9
+    },
+    "Admission grade": {
+      "kind": "numeric",
+      "min": 95.0,
+      "max": 190.0,
+      "median": 126.1,
+      "mean": 126.97811934900544
+    },
+    "Displaced": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1
+      ],
+      "default": 1
+    },
+    "Educational special needs": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1
+      ],
+      "default": 0
+    },
+    "Debtor": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1
+      ],
+      "default": 0
+    },
+    "Tuition fees up to date": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1
+      ],
+      "default": 1
+    },
+    "Gender": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1
+      ],
+      "default": 0
+    },
+    "Scholarship holder": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1
+      ],
+      "default": 0
+    },
+    "Age at enrollment": {
+      "kind": "numeric",
+      "min": 17.0,
+      "max": 70.0,
+      "median": 20.0,
+      "mean": 23.265144665461122
+    },
+    "International": {
+      "kind": "categorical",
+      "values": [
+        0,
+        1
+      ],
+      "default": 0
+    },
+    "Curricular units 1st sem (credited)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 20.0,
+      "median": 0.0,
+      "mean": 0.7099909584086799
+    },
+    "Curricular units 1st sem (enrolled)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 26.0,
+      "median": 6.0,
+      "mean": 6.2705696202531644
+    },
+    "Curricular units 1st sem (evaluations)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 45.0,
+      "median": 8.0,
+      "mean": 8.299050632911392
+    },
+    "Curricular units 1st sem (approved)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 26.0,
+      "median": 5.0,
+      "mean": 4.706600361663653
+    },
+    "Curricular units 1st sem (grade)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 18.875,
+      "median": 12.285714285714286,
+      "mean": 10.640821575154185
+    },
+    "Curricular units 1st sem (without evaluations)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 12.0,
+      "median": 0.0,
+      "mean": 0.13765822784810128
+    },
+    "Curricular units 2nd sem (credited)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 19.0,
+      "median": 0.0,
+      "mean": 0.5418173598553345
+    },
+    "Curricular units 2nd sem (enrolled)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 23.0,
+      "median": 6.0,
+      "mean": 6.232142857142857
+    },
+    "Curricular units 2nd sem (evaluations)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 33.0,
+      "median": 8.0,
+      "mean": 8.063291139240507
+    },
+    "Curricular units 2nd sem (approved)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 20.0,
+      "median": 5.0,
+      "mean": 4.435804701627487
+    },
+    "Curricular units 2nd sem (grade)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 18.571428571428573,
+      "median": 12.2,
+      "mean": 10.230205722716985
+    },
+    "Curricular units 2nd sem (without evaluations)": {
+      "kind": "numeric",
+      "min": 0.0,
+      "max": 12.0,
+      "median": 0.0,
+      "mean": 0.15031645569620253
+    },
+    "Unemployment rate": {
+      "kind": "numeric",
+      "min": 7.6,
+      "max": 16.2,
+      "median": 11.1,
+      "mean": 11.56613924050633
+    },
+    "Inflation rate": {
+      "kind": "numeric",
+      "min": -0.8,
+      "max": 3.7,
+      "median": 1.4,
+      "mean": 1.228028933092224
+    },
+    "GDP": {
+      "kind": "numeric",
+      "min": -4.06,
+      "max": 3.51,
+      "median": 0.32,
+      "mean": 0.001968806509945778
+    }
+  },
+  "audit_columns": [
+    "Gender",
+    "Scholarship holder",
+    "Tuition fees up to date",
+    "Age at enrollment",
+    "Nacionality"
+  ],
+  "prediction_timing_note": "UCI dataset includes first- and second-semester academic performance; this is end-of-course outcome classification, not admission-time early warning."
+}

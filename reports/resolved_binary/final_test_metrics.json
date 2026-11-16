@@ -1,0 +1,25 @@
+{
+  "accuracy": 0.9118457300275482,
+  "balanced_accuracy": 0.9017988018609393,
+  "macro_precision": 0.9122016999019287,
+  "macro_recall": 0.9017988018609393,
+  "macro_f1": 0.9063414634146342,
+  "weighted_f1": 0.9112827936694093,
+  "n_test": 726,
+  "task": "resolved_binary",
+  "selected_model": "Extra Trees",
+  "classes": [
+    "Dropout",
+    "Graduate"
+  ],
+  "test_evaluated_once": true,
+  "split_seed": 42,
+  "train_size": 2359,
+  "validation_size": 545,
+  "final_fit_size": 2904,
+  "test_size": 726,
+  "feature_count_original": 36,
+  "feature_count_engineered": 45,
+  "prediction_scope": "End-of-course outcome classification; first- and second-semester performance features included.",
+  "task_definition": "Dropout vs Graduate; Enrolled class excluded"
+}

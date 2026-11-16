@@ -1,0 +1,34 @@
+FAIRXPLAIN — FINAL PROJECT QUICK START (WINDOWS)
+
+Dataset:
+- Official UCI data.csv is included at data\raw\data.csv.
+- 4,424 rows; 36 predictors; Dropout / Enrolled / Graduate target.
+
+Setup (PowerShell in this folder):
+  py -3.12 -m venv .venv
+  .\.venv\Scripts\Activate.ps1
+  python -m pip install --upgrade pip
+  python -m pip install -r requirements.txt
+
+Train all three separately reported task variants:
+  python scripts\train.py --task both
+  python scripts\train.py --task resolved_binary
+
+Generate explanation and research report artifacts:
+  python scripts\create_explanations.py
+  python scripts\build_report.py
+
+Launch the dashboard:
+  python -m streamlit run app.py
+
+EXECUTED TEST RESULTS (seed 42, 65/15/20 stratified train/validation/test):
+  Multiclass Dropout/Enrolled/Graduate: XGBoost, 75.25% test accuracy (n=885)
+  Binary Dropout vs Enrolled+Graduate: Random Forest, 87.91% (n=885)
+  Resolved binary Dropout vs Graduate (Enrolled excluded): Extra Trees, 91.18% (n=726)
+
+95%+ was the target but was NOT achieved by these executed runs. Do not report it as achieved.
+The resolved-binary task excludes 794 currently enrolled records; it is not the three-class task.
+
+Research scope: the dataset includes first- and second-semester academic results. This is
+end-of-course outcome classification, not admission-time early warning. Fairness results
+are descriptive only. Explanations are predictive associations, not causal claims.

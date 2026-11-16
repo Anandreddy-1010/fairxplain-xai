@@ -1,0 +1,241 @@
+{
+  "multiclass": {
+    "selected_model": "XGBoost",
+    "test_metrics": {
+      "accuracy": 0.752542372881356,
+      "balanced_accuracy": 0.6683065991307225,
+      "macro_precision": 0.6876132950639561,
+      "macro_recall": 0.6683065991307225,
+      "macro_f1": 0.6744244805418732,
+      "weighted_f1": 0.7425551291091118,
+      "n_test": 885,
+      "task": "multiclass",
+      "selected_model": "XGBoost",
+      "classes": [
+        "Dropout",
+        "Enrolled",
+        "Graduate"
+      ],
+      "test_evaluated_once": true,
+      "split_seed": 42,
+      "train_size": 2875,
+      "validation_size": 664,
+      "final_fit_size": 3539,
+      "test_size": 885,
+      "feature_count_original": 36,
+      "feature_count_engineered": 45,
+      "prediction_scope": "End-of-course outcome classification; first- and second-semester performance features included."
+    },
+    "validation_comparison": [
+      {
+        "model": "XGBoost",
+        "accuracy": 0.7771084337349398,
+        "balanced_accuracy": 0.6991303280744393,
+        "macro_precision": 0.7226906771478566,
+        "macro_recall": 0.6991303280744393,
+        "macro_f1": 0.7064254107989395,
+        "weighted_f1": 0.7676168271587556,
+        "n_test": 664
+      },
+      {
+        "model": "Extra Trees",
+        "accuracy": 0.7725903614457831,
+        "balanced_accuracy": 0.6746673441705434,
+        "macro_precision": 0.7248882854482367,
+        "macro_recall": 0.6746673441705434,
+        "macro_f1": 0.6829140037888711,
+        "weighted_f1": 0.7532221006709922,
+        "n_test": 664
+      },
+      {
+        "model": "LightGBM",
+        "accuracy": 0.7650602409638554,
+        "balanced_accuracy": 0.6845850280832962,
+        "macro_precision": 0.7034447085988145,
+        "macro_recall": 0.6845850280832962,
+        "macro_f1": 0.6899016122317093,
+        "weighted_f1": 0.7551742992584026,
+        "n_test": 664
+      },
+      {
+        "model": "CatBoost",
+        "accuracy": 0.7650602409638554,
+        "balanced_accuracy": 0.6819983607448297,
+        "macro_precision": 0.6983044389407507,
+        "macro_recall": 0.6819983607448297,
+        "macro_f1": 0.686255851962296,
+        "weighted_f1": 0.754535541881512,
+        "n_test": 664
+      },
+      {
+        "model": "Random Forest",
+        "accuracy": 0.7635542168674698,
+        "balanced_accuracy": 0.6672927556677969,
+        "macro_precision": 0.6922333617524911,
+        "macro_recall": 0.6672927556677969,
+        "macro_f1": 0.6703273896629097,
+        "weighted_f1": 0.7462575127806091,
+        "n_test": 664
+      }
+    ]
+  },
+  "binary": {
+    "selected_model": "Random Forest",
+    "test_metrics": {
+      "accuracy": 0.8790960451977401,
+      "balanced_accuracy": 0.8487643833048206,
+      "macro_precision": 0.8688350392822622,
+      "macro_recall": 0.8487643833048206,
+      "macro_f1": 0.8575777310197642,
+      "weighted_f1": 0.8774071077477245,
+      "n_test": 885,
+      "task": "binary",
+      "selected_model": "Random Forest",
+      "classes": [
+        "Dropout",
+        "Not dropout"
+      ],
+      "test_evaluated_once": true,
+      "split_seed": 42,
+      "train_size": 2875,
+      "validation_size": 664,
+      "final_fit_size": 3539,
+      "test_size": 885,
+      "feature_count_original": 36,
+      "feature_count_engineered": 45,
+      "prediction_scope": "End-of-course outcome classification; first- and second-semester performance features included."
+    },
+    "validation_comparison": [
+      {
+        "model": "Random Forest",
+        "accuracy": 0.8659638554216867,
+        "balanced_accuracy": 0.8331980054755733,
+        "macro_precision": 0.8531956214689265,
+        "macro_recall": 0.8331980054755733,
+        "macro_f1": 0.841911105760871,
+        "weighted_f1": 0.8640136324762151,
+        "n_test": 664
+      },
+      {
+        "model": "Extra Trees",
+        "accuracy": 0.8659638554216867,
+        "balanced_accuracy": 0.8282429239145144,
+        "macro_precision": 0.8570199275362319,
+        "macro_recall": 0.8282429239145144,
+        "macro_f1": 0.8401112533041852,
+        "weighted_f1": 0.8631558948920706,
+        "n_test": 664
+      },
+      {
+        "model": "LightGBM",
+        "accuracy": 0.8644578313253012,
+        "balanced_accuracy": 0.8258955060741389,
+        "macro_precision": 0.8556627245151835,
+        "macro_recall": 0.8258955060741389,
+        "macro_f1": 0.8380803745610612,
+        "weighted_f1": 0.8615051309412445,
+        "n_test": 664
+      },
+      {
+        "model": "CatBoost",
+        "accuracy": 0.8644578313253012,
+        "balanced_accuracy": 0.8221791949033447,
+        "macro_precision": 0.8590470887133261,
+        "macro_recall": 0.8221791949033447,
+        "macro_f1": 0.8366409709693292,
+        "weighted_f1": 0.860803061351524,
+        "n_test": 664
+      },
+      {
+        "model": "XGBoost",
+        "accuracy": 0.8569277108433735,
+        "balanced_accuracy": 0.8141584168722609,
+        "macro_precision": 0.8488579090951126,
+        "macro_recall": 0.8141584168722609,
+        "macro_f1": 0.8278229207324896,
+        "weighted_f1": 0.8531963274958243,
+        "n_test": 664
+      }
+    ]
+  },
+  "resolved_binary": {
+    "selected_model": "Extra Trees",
+    "test_metrics": {
+      "accuracy": 0.9118457300275482,
+      "balanced_accuracy": 0.9017988018609393,
+      "macro_precision": 0.9122016999019287,
+      "macro_recall": 0.9017988018609393,
+      "macro_f1": 0.9063414634146342,
+      "weighted_f1": 0.9112827936694093,
+      "n_test": 726,
+      "task": "resolved_binary",
+      "selected_model": "Extra Trees",
+      "classes": [
+        "Dropout",
+        "Graduate"
+      ],
+      "test_evaluated_once": true,
+      "split_seed": 42,
+      "train_size": 2359,
+      "validation_size": 545,
+      "final_fit_size": 2904,
+      "test_size": 726,
+      "feature_count_original": 36,
+      "feature_count_engineered": 45,
+      "prediction_scope": "End-of-course outcome classification; first- and second-semester performance features included.",
+      "task_definition": "Dropout vs Graduate; Enrolled class excluded"
+    },
+    "validation_comparison": [
+      {
+        "model": "Extra Trees",
+        "accuracy": 0.926605504587156,
+        "balanced_accuracy": 0.9145172238248768,
+        "macro_precision": 0.9314796278850684,
+        "macro_recall": 0.9145172238248768,
+        "macro_f1": 0.9214991501742864,
+        "weighted_f1": 0.9258707773335058,
+        "n_test": 545
+      },
+      {
+        "model": "XGBoost",
+        "accuracy": 0.9229357798165138,
+        "balanced_accuracy": 0.9106637818881158,
+        "macro_precision": 0.9274684997644842,
+        "macro_recall": 0.9106637818881158,
+        "macro_f1": 0.9175741076830006,
+        "weighted_f1": 0.9221643162001808,
+        "n_test": 545
+      },
+      {
+        "model": "LightGBM",
+        "accuracy": 0.9211009174311928,
+        "balanced_accuracy": 0.9091577577917302,
+        "macro_precision": 0.9249126207889096,
+        "macro_recall": 0.9091577577917302,
+        "macro_f1": 0.9156956770426756,
+        "weighted_f1": 0.9203567176675562,
+        "n_test": 545
+      },
+      {
+        "model": "CatBoost",
+        "accuracy": 0.9211009174311928,
+        "balanced_accuracy": 0.9083163640477404,
+        "macro_precision": 0.9260283876298394,
+        "macro_recall": 0.9083163640477404,
+        "macro_f1": 0.9155267189330448,
+        "weighted_f1": 0.9202647876564706,
+        "n_test": 545
+      },
+      {
+        "model": "Random Forest",
+        "accuracy": 0.9155963302752294,
+        "balanced_accuracy": 0.9054810792465636,
+        "macro_precision": 0.916446393818805,
+        "macro_recall": 0.9054810792465636,
+        "macro_f1": 0.9102514534467452,
+        "weighted_f1": 0.9150337116617048,
+        "n_test": 545
+      }
+    ]
+  }
+}

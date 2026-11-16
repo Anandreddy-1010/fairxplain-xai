@@ -1,0 +1,25 @@
+{
+  "accuracy": 0.752542372881356,
+  "balanced_accuracy": 0.6683065991307225,
+  "macro_precision": 0.6876132950639561,
+  "macro_recall": 0.6683065991307225,
+  "macro_f1": 0.6744244805418732,
+  "weighted_f1": 0.7425551291091118,
+  "n_test": 885,
+  "task": "multiclass",
+  "selected_model": "XGBoost",
+  "classes": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "test_evaluated_once": true,
+  "split_seed": 42,
+  "train_size": 2875,
+  "validation_size": 664,
+  "final_fit_size": 3539,
+  "test_size": 885,
+  "feature_count_original": 36,
+  "feature_count_engineered": 45,
+  "prediction_scope": "End-of-course outcome classification; first- and second-semester performance features included."
+}

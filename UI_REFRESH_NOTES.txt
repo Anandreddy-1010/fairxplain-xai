@@ -1,0 +1,21 @@
+FairXplain UI refresh - complete landing page update
+====================================================
+
+What changed:
+- Redesigned the Overview landing page in a dark navy / blue / violet visual style inspired by the approved reference.
+- Added FairXplain brand header and working top navigation buttons connected to existing Streamlit workspace pages.
+- Added a generated hero illustration asset at figures/fairxplain_hero_art.png.
+- Added KPI cards using the saved project metrics and dataset information.
+- Kept the outcome distribution chart and clearly separated the two binary experiment results from the primary three-class result.
+
+What did NOT change:
+- No dataset rows, labels, feature engineering, train/validation/test splits, model pipelines, thresholds, SHAP calculations, fairness results, or saved metrics were changed.
+- The primary three-class test accuracy remains the saved measured value (75.25% in the supplied reports).
+- Binary results remain separate tasks: Dropout vs. non-Dropout and Dropout vs. Graduate (Enrolled excluded).
+
+Validation performed in this build:
+- python -m py_compile app.py: passed
+- python -m pytest tests -q: 7 passed
+- python scripts/verify_artifacts.py: all three saved model pipelines loaded and produced valid probability outputs
+
+Note: Streamlit runtime could not be launched in the build sandbox because Streamlit is not installed in that sandbox. Run locally using the project's .venv.

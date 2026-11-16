@@ -1,0 +1,39 @@
+{
+  "status": "Descriptive subgroup analysis; differences are not causal and are not a legal compliance assessment.",
+  "Age at enrollment": {
+    "groups": 8,
+    "accuracy_gap_max_minus_min": 0.10074231177094384,
+    "macro_f1_gap_max_minus_min": 0.15636200716845883,
+    "predicted_dropout_rate_gap": 0.5543478260869565
+  },
+  "Age group": {
+    "groups": 5,
+    "accuracy_gap_max_minus_min": 0.10420168067226898,
+    "macro_f1_gap_max_minus_min": 0.1290394074582475,
+    "predicted_dropout_rate_gap": 0.44561527581329563
+  },
+  "Gender": {
+    "groups": 2,
+    "accuracy_gap_max_minus_min": 0.02014386101731469,
+    "macro_f1_gap_max_minus_min": 0.0020354199374887916,
+    "predicted_dropout_rate_gap": 0.2941601055312653
+  },
+  "Nacionality": {
+    "groups": 1,
+    "accuracy_gap_max_minus_min": 0.0,
+    "macro_f1_gap_max_minus_min": 0.0,
+    "predicted_dropout_rate_gap": 0.0
+  },
+  "Scholarship holder": {
+    "groups": 2,
+    "accuracy_gap_max_minus_min": 0.04147379752409841,
+    "macro_f1_gap_max_minus_min": 0.07378894280771675,
+    "predicted_dropout_rate_gap": 0.3835200861183148
+  },
+  "Tuition fees up to date": {
+    "groups": 2,
+    "accuracy_gap_max_minus_min": 0.054152393752151196,
+    "macro_f1_gap_max_minus_min": 0.39378541007306683,
+    "predicted_dropout_rate_gap": 0.7313195548489666
+  }
+}

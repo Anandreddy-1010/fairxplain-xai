@@ -1,0 +1,24 @@
+{
+  "accuracy": 0.8790960451977401,
+  "balanced_accuracy": 0.8487643833048206,
+  "macro_precision": 0.8688350392822622,
+  "macro_recall": 0.8487643833048206,
+  "macro_f1": 0.8575777310197642,
+  "weighted_f1": 0.8774071077477245,
+  "n_test": 885,
+  "task": "binary",
+  "selected_model": "Random Forest",
+  "classes": [
+    "Dropout",
+    "Not dropout"
+  ],
+  "test_evaluated_once": true,
+  "split_seed": 42,
+  "train_size": 2875,
+  "validation_size": 664,
+  "final_fit_size": 3539,
+  "test_size": 885,
+  "feature_count_original": 36,
+  "feature_count_engineered": 45,
+  "prediction_scope": "End-of-course outcome classification; first- and second-semester performance features included."
+}
